@@ -63,20 +63,20 @@ sites.places.forEach(place => {
     siteHeadline.textContent = place.name;
     let siteText = document.createElement("p");
     siteText.textContent = place.city;
-    sitesDiv.append(place.img, place.name, place.city);
+    sitesDiv.append(siteIcon, siteHeadline, siteText);
     sitesSec.append(sitesDiv);
 });
 
 const advantagesSec = document.querySelector(".advantages");
-advantages.forEach(service => {
+advantages.forEach(advantage => {
     let advantageDiv = document.createElement("div");
     advantageDiv.classList.add("service");
     let advantageImage = document.createElement("img");
-    advantageImage.setAttribute("src", service.illustration);
+    advantageImage.setAttribute("src", advantage.icon);
     let advantageHeading = document.createElement("h3");
-    advantageHeading.textContent = service.headline;
+    advantageHeading.textContent = advantage.headline;
     let advantageText = document.createElement("p");
-    advantageText.textContent = service.text;
+    advantageText.textContent = advantage.text;
     advantageDiv.append(advantageImage, advantageHeading, advantageText);
     advantagesSec.appendChild(advantageDiv);
 });
