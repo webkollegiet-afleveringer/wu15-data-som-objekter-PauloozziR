@@ -23,7 +23,7 @@ services.forEach(service => {
     serviceText.textContent = service.text;
     let serviceLinkText = document.createElement("a");
     serviceLinkText.textContent = service.linktext;
-/*    serviceLinkText.setAttribute("href", );     */
+/*    serviceLinkText.setAttribute("href", );    */
     serviceDiv.append(serviceImage, serviceHeading, serviceText, serviceLinkText);
     servicesSec.appendChild(serviceDiv);
 });
@@ -33,7 +33,7 @@ let facilitiesHeadline = document.createElement("h2");
 facilitiesHeadline.textContent = facilities.headline;
 facilitiesSec.append(facilitiesHeadline);
 facilities.options.forEach(option => {
-let facilitiesDiv = document.createElement("div");
+    let facilitiesDiv = document.createElement("div");
     let facilityIcon = document.createElement("img");
     facilityIcon.setAttribute("src", option.icon);
     let facilityHeadline = document.createElement("h3");
@@ -80,5 +80,44 @@ advantages.forEach(service => {
     advantageDiv.append(advantageImage, advantageHeading, advantageText);
     advantagesSec.appendChild(advantageDiv);
 });
+
+const footer = document.querySelector(".footer");
+let footerSmall = document.createElement("h3");
+footerSmall.textContent = footerData.smallHeadline;
+let footerBig = document.createElement("h2");
+footerBig.textContent = footerData.bigHeadline;
+footer.append(footerSmall, footerBig);
+footerData.lists.forEach(list => {
+    let lists = document.createElement("ul");
+    let listHeadline = document.createElement("li");
+    listHeadline.textContent = list.headline;
+    listHeadline.classList.add("listHeadline");
+    let firstItem = document.createElement("li");
+    firstItem.textContent = list.first;
+    let secondItem = document.createElement("li");
+    secondItem.textContent = list.second;
+    let thirdItem = document.createElement("li");
+    thirdItem.textContent = list.third;
+    let fourthItem = document.createElement("li");
+    fourthItem.textContent = list.fourth;
+    lists.append(listHeadline, firstItem, secondItem, thirdItem, fourthItem);
+    footer.append(lists);
+});
+let footerCopy = document.createElement("copyright");
+footerCopy.textContent = footerData.copy;
+let footerNavigation = document.createElement("ul");
+let firstItem = document.createElement("li");
+firstItem.textContent = footerData.navigation.first;
+let secondItem = document.createElement("li");
+secondItem.textContent = footerData.navigation.second;
+let thirdItem = document.createElement("li");
+thirdItem.textContent = footerData.navigation.third;
+let fourthItem = document.createElement("li");
+fourthItem.textContent = footerData.navigation.fourth;
+let fifthItem = document.createElement("li");
+fifthItem.textContent = footerData.navigation.fifth;
+footerNavigation.append(firstItem, secondItem, thirdItem, fourthItem, fifthItem);
+footer.append(footerCopy, footerNavigation);
+
 //eksempel på at udskrive alle overskrifter i services i konsollen:
 services.forEach(service => console.log(service.headline))
