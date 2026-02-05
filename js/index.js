@@ -3,13 +3,18 @@
 const heroSec = document.querySelector(".hero");
 let heroImage = document.createElement("img");
 heroImage.setAttribute("src", hero.image);
+let heroDiv = document.createElement("div");
 let heroHeading = document.createElement("h1");
 heroHeading.textContent = hero.headline;
 let heroText = document.createElement("p");
 heroText.textContent = hero.copy;
+let heroButton = document.createElement("button");
+heroButton.textContent = "Explore";
 let heroIcon = document.createElement("img");
 heroIcon.setAttribute("src", hero.icon);
-heroSec.append(heroImage, heroHeading, heroText, heroIcon);
+heroButton.append(heroIcon);
+heroDiv.append(heroHeading, heroText, heroButton);
+heroSec.append(heroImage, heroDiv);
 
 const servicesSec = document.querySelector(".services");
 services.forEach(service => {

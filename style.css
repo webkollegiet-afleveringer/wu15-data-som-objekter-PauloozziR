@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+a {
+
+}
+ul {
+    list-style: none;
+}
+.hero {
+
+}
+.hero div {
+    position: relative;
+    top: -11rem;
+    margin: 0 40% 0 5%;
+    padding: 8% 10% 5% 5%;
+    background-color: #fff;
+   /*  box-shadow: #000; */
+}
+.hero button {
+    width: 30%;
+    height: 2rem;
+    background-color: orangered;
+}
+.services {
+
+}
+.service {
+
+}
+.facilities {
+
+}
+.sites {
+
+}
+.advantages {
+
+}
+.footer {
+
+}
+.listHeadline {
+    font-weight: bold;
+}
