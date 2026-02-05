@@ -12,11 +12,20 @@ a {
     cursor: pointer;
     color: orangered;
 }
+button {
+    border: none;
+}
 ul {
     list-style: none;
 }
 h1, h2, h3 {
     font-family: "Merriweather", serif;
+}
+h1 {
+    font-size: 39px;
+}
+h2 {
+    font-size: 36px;
 }
 .hero {
 
@@ -33,6 +42,15 @@ h1, h2, h3 {
     width: 30%;
     height: 2rem;
     background-color: orangered;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+button img {
+    width: 10%;
+    height: 60%;
 }
 .services, .facilities, .sites, .advantages {
     margin: 10%;
