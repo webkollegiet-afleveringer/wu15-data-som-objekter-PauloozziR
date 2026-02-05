@@ -2,42 +2,66 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 img {
     width: 100%;
     height: auto;
 }
 a {
-
+    cursor: pointer;
+    color: orangered;
 }
 ul {
     list-style: none;
+}
+h1, h2, h3 {
+    font-family: "Merriweather", serif;
 }
 .hero {
 
 }
 .hero div {
     position: relative;
-    top: -11rem;
-    margin: 0 40% 0 5%;
-    padding: 8% 10% 5% 5%;
+    top: -17rem;
+    margin: 0 44% 0 5%;
+    padding: 5% 8% 3% 3%;
     background-color: #fff;
-   /*  box-shadow: #000; */
+    box-shadow: 0 1px 10px rgba(0,0,0,0.2);
 }
 .hero button {
     width: 30%;
     height: 2rem;
     background-color: orangered;
 }
+.services, .facilities, .sites, .advantages {
+    margin: 10%;
+}
 .services {
-
+    display: flex;
+    align-items: baseline;
+    gap: 5%;
 }
 .service {
 
 }
-.facilities {
-
+.service p {
+    padding: 0.5rem 0 1rem;
 }
+.service a {
+    padding-top: 1.5rem;
+}
+.facilities {
+    display: grid;
+}
+.facilities h2 {
+    grid-row: 1;
+    grid-column: 1 / -1;
+}
+.facilities div {
+    grid-row: 2;
+}
+
 .sites {
 
 }

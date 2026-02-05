@@ -45,7 +45,9 @@ facilities.options.forEach(option => {
     facilityHeadline.textContent = option.headline;
     let facilityText = document.createElement("p");
     facilityText.textContent = option.text;
-    facilitiesDiv.append(facilityIcon, facilityHeadline, facilityText);
+    let facilityLink = document.createElement("a");
+    facilityLink.textContent = "Show me more";
+    facilitiesDiv.append(facilityIcon, facilityHeadline, facilityText, facilityLink);
     facilitiesSec.append(facilitiesDiv);
 });
 
