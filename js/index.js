@@ -52,6 +52,7 @@ facilities.options.forEach(option => {
 });
 
 const sitesSec = document.querySelector(".sites");
+let sitesDiv = document.createElement("div");
 let sitesHeadline = document.createElement("h2");
 sitesHeadline.textContent = sites.headline;
 let sitesText = document.createElement("p");
@@ -61,20 +62,26 @@ sitesButton.textContent = "Start";
 let sitesImage = document.createElement("img");
 sitesImage.setAttribute("src", sites.btnicon);
 sitesButton.append(sitesImage);
-sitesSec.append(sitesHeadline, sitesButton);
+sitesDiv.append(sitesHeadline, sitesText, sitesButton);
+sitesSec.append(sitesDiv);
 sites.places.forEach(place => {
-    let sitesDiv = document.createElement("div");
+    let siteDiv = document.createElement("div");
     let siteIcon = document.createElement("img");
     siteIcon.setAttribute("src", place.img);
     let siteHeadline = document.createElement("h3");
     siteHeadline.textContent = place.name;
     let siteText = document.createElement("p");
     siteText.textContent = place.city;
-    sitesDiv.append(siteIcon, siteHeadline, siteText);
-    sitesSec.append(sitesDiv);
+    let siteLink = document.createElement("a");
+    siteLink.textContent = "View the Site";
+    siteDiv.append(siteIcon, siteHeadline, siteText, siteLink);
+    sitesSec.append(siteDiv);
 });
 
 const advantagesSec = document.querySelector(".advantages");
+let advantagesHeadline = document.createElement("h2");
+advantagesHeadline.textContent = "Our Advantages";
+advantagesSec.append(advantagesHeadline);
 advantages.forEach(advantage => {
     let advantageDiv = document.createElement("div");
     advantageDiv.classList.add("service");
