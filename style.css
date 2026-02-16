@@ -18,7 +18,7 @@ button {
 ul {
     list-style: none;
 }
-h1, h2, h3, .hero span {
+h1, h2, h3, .hero h1 span {
     font-family: "Merriweather", serif;
 }
 h1 {
@@ -35,7 +35,7 @@ h2 {
     position: relative;
     top: -17rem;
     margin: 0 44% 0 5%;
-    padding: 5% 8% 3% 3%;
+    padding: 5% 15% 3% 3%;
     background-color: #fff;
     box-shadow: 0 1px 10px rgba(0,0,0,0.2);
 }
@@ -44,9 +44,10 @@ h2 {
 }
 .hero p {
     font-size: 20px;
+    margin-bottom: 1.5rem;
 }
 .hero button {
-    width: 30%;
+    width: 50%;
     height: 3rem;
     display: flex;
     justify-content: center;
@@ -54,6 +55,7 @@ h2 {
     gap: 3%;
     background-color: orangered;
     color: #fff;
+    font-size: 18px;
     font-weight: bold;
 }
 .services, .facilities, .sites, .advantages {
