@@ -10,10 +10,20 @@ img {
 }
 a {
     cursor: pointer;
-    color: orangered;
+    color: #F78065;
 }
 button {
     border: none;
+    width: 49%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    background-color: #F78065;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
 }
 ul {
     list-style: none;
@@ -31,7 +41,7 @@ h3 {
     font-size: 24px;
 }
 .hero-part2 {
-    color: orange;
+    color: #F78065;
 }
 .hero figcaption {
     height: 70vh;
@@ -49,18 +59,18 @@ h3 {
     font-size: 20px;
     margin-bottom: 1.5rem;
 }
-.hero button {
+/* .hero button {
     width: 49%;
     height: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3%;
-    background-color: orangered;
+    background-color: #F78065;
     color: #fff;
     font-size: 18px;
     font-weight: bold;
-}
+} */
 .services, .facilities, .sites, .advantages {
     margin: 0 10% 20%;
 }
@@ -82,30 +92,62 @@ h3 {
     font-size: 18px;
     font-weight: bold;
 }
-.facilities {
+.facilities, .advantages {
     display: grid;
-    align-items: baseline;
+    column-gap: 3%;
+    row-gap: 6rem;
 }
-.facilities h2 {
+.facilities img, .advantages img {
+    width: 2rem;
+    height: 2rem;
+}
+.facilities h2, .advantages h2 {
     grid-row: 1;
-    grid-column: 1 / -1;
+    grid-column: 1 / span 3;
 }
-.facilities div {
+.facilities div, .advantages div {
     grid-row: 2;
+}
+.facilities h3, .advantages h3 {
+    font-size: 22px;
+    margin: 4rem 0 2rem;
+}
+.facilities p, .advantages p {
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+.facilities a {
+    font-size: 18px;
+    font-weight: bold;
 }
 .sites {
-    display: flex;
-}
-.advantages {
     display: grid;
-    align-items: baseline;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    column-gap: 4%;
 }
-.advantages h2 {
-    grid-row: 1;
-    grid-column: 1 / -1;
+.sites div:first-of-type {
+    margin-right: 20%;
 }
-.advantages div {
-    grid-row: 2;
+.sites p {
+    font-size: 18px;
+    margin: 1.5rem 0 3rem;
+}
+.sites button {
+    flex-direction: row-reverse;
+}
+.sites button img {
+    width: 1.5rem;
+}
+.place img {
+    height: 80%;
+    margin-bottom: 1rem;
+}
+.place p {
+    font-size: 14px;
+    margin: 0.5rem 0;
+}
+.place a {
+    font-size: 18px;
 }
 /* .footer {
     background-color: lightgray;

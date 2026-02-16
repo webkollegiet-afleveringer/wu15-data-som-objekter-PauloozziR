@@ -98,6 +98,7 @@ sitesDiv.append(sitesHeadline, sitesText, sitesButton);
 sitesSec.append(sitesDiv);
 sites.places.forEach(place => {
     let siteDiv = document.createElement("div");
+    siteDiv.classList.add("place");
     let siteIcon = document.createElement("img");
     siteIcon.setAttribute("src", place.img);
     let siteHeadline = document.createElement("h3");
@@ -117,7 +118,6 @@ advantagesHeadline.textContent = "Our Advantages";
 advantagesSec.append(advantagesHeadline);
 advantages.forEach(advantage => {
     let advantageDiv = document.createElement("div");
-    advantageDiv.classList.add("service");
     let advantageImage = document.createElement("img");
     advantageImage.setAttribute("src", advantage.icon);
     let advantageHeading = document.createElement("h3");
