@@ -27,6 +27,9 @@ h1 {
 h2 {
     font-size: 36px;
 }
+h3 {
+    font-size: 24px;
+}
 .hero-part2 {
     color: orange;
 }
@@ -47,7 +50,7 @@ h2 {
     margin-bottom: 1.5rem;
 }
 .hero button {
-    width: 50%;
+    width: 49%;
     height: 3rem;
     display: flex;
     justify-content: center;
@@ -59,18 +62,25 @@ h2 {
     font-weight: bold;
 }
 .services, .facilities, .sites, .advantages {
-    margin: 0 10% 10%;
+    margin: 0 10% 20%;
 }
 .services {
     display: flex;
     align-items: baseline;
     gap: 5%;
 }
+.service img {
+    width: 60%;
+    height: 11.25rem;
+    margin-bottom: 5rem;
+}
 .service p {
-    padding: 0.5rem 0 1rem;
+    padding: 1.5rem 0;
 }
 .service a {
     padding-top: 1.5rem;
+    font-size: 18px;
+    font-weight: bold;
 }
 .facilities {
     display: grid;
