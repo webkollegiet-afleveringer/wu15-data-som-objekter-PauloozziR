@@ -139,7 +139,6 @@ footerData.lists.forEach(list => {
     let lists = document.createElement("ul");
     let listHeadline = document.createElement("li");
     listHeadline.textContent = list.headline;
-    listHeadline.classList.add("listHeadline");
     let firstItem = document.createElement("li");
     firstItem.textContent = list.first;
     let secondItem = document.createElement("li");
