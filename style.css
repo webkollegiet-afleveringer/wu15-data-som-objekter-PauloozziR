@@ -149,6 +149,9 @@ h3 {
 .place a {
     font-size: 18px;
 }
+.advantages div:first-of-type p {
+    padding-top: 1.8rem;
+}
 .footer {
     background-color: #F7F7F7;
     display: grid;
