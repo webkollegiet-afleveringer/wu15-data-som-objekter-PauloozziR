@@ -120,6 +120,9 @@ h3 {
     font-size: 18px;
     font-weight: bold;
 }
+.facilities div:nth-of-type(2n) p {
+    padding-bottom: 1rem;
+}
 .sites {
     display: grid;
     grid-template-columns: 2fr repeat(3, 1fr);
