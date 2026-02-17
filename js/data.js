@@ -99,7 +99,7 @@ let advantages = [
 
 let footerData = {
     smallHeadline: "Easy Camper",
-    bigHeadline: "When Passion Meets Comfort",
+    bigHeadline: "When Passion Meets Comfort.",
     lists: [
         {
         headline: "Discover the Network",
@@ -110,16 +110,16 @@ let footerData = {
         },
         {
         headline: "Become a Manager",
-        first: "Discover",
-        second: "Discover",
-        third: "Discover"
+        first: "Join your Pairing",
+        second: "Offer your Service",
+        third: "Are you a guide?"
         },
         {
         headline: "Assistance",
-        first: "Discover",
-        second: "Discover",
-        third: "Discover",
-        fourth: "Discover"
+        first: "Support Center",
+        second: "FAQs",
+        third: "Cancallation Options",
+        fourth: "Reliability and Sequrity"
         }
     ],
     copy: "EazyCamper.All rights reserved",

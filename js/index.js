@@ -137,6 +137,7 @@ footerBig.textContent = footerData.bigHeadline;
 footer.append(footerSmall, footerBig);
 footerData.lists.forEach(list => {
     let lists = document.createElement("ul");
+    lists.classList.add("footerNavLists");
     let listHeadline = document.createElement("li");
     listHeadline.textContent = list.headline;
     let firstItem = document.createElement("li");
@@ -166,5 +167,9 @@ fifthItem.textContent = footerData.navigation.fifth;
 footerNavigation.append(firstItem, secondItem, thirdItem, fourthItem, fifthItem);
 footer.append(footerCopy, footerNavigation);
 
+
+/* const listItemsString = /*html*//*`
+    ${footer.listItems.map((item) => `<h2>${item.headline}</h2> <ul> ${item.links.map((thislink) => `<li>${thislink.link}</li>`).join("")}</ul>`
+)}`
 //eksempel på at udskrive alle overskrifter i services i konsollen:
 /* services.forEach(service => console.log(service.headline)) */
