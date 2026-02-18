@@ -26,6 +26,7 @@ let part3 = heroArray.slice(8).join(" ");
 console.log(part1);
 console.log(part2);
 console.log(part3);
+/* <i style='font-size:2rem' class='fas'>&#xf6d1;</i> */
 const heroString = /*html*/`
     <figure>
         <img src="${hero.image}" alt="${hero.headline}">
@@ -51,6 +52,8 @@ services.forEach(service => {
     let serviceDiv = document.createElement("div");
     serviceDiv.classList.add("service");
     let serviceImage = document.createElement("img");
+    let imgBox = document.createElement("figure");
+    imgBox.classList.add("imgBox")
     serviceImage.setAttribute("src", service.illustration);
     let serviceHeading = document.createElement("h3");
     serviceHeading.textContent = service.headline;
@@ -59,7 +62,8 @@ services.forEach(service => {
     let serviceLinkText = document.createElement("a");
     serviceLinkText.textContent = service.linktext;
 /*    serviceLinkText.setAttribute("href", );    */
-    serviceDiv.append(serviceImage, serviceHeading, serviceText, serviceLinkText);
+    imgBox.append(serviceImage)
+    serviceDiv.append(imgBox, serviceHeading, serviceText, serviceLinkText);
     servicesSec.appendChild(serviceDiv);
 });
 

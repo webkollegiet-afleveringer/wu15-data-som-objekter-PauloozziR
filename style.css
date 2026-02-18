@@ -59,18 +59,6 @@ h3 {
     font-size: 20px;
     margin-bottom: 1.5rem;
 }
-/* .hero button {
-    width: 49%;
-    height: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3%;
-    background-color: #F78065;
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-} */
 .services, .facilities, .sites, .advantages {
     margin: 0 10% 20%;
 }
@@ -79,10 +67,13 @@ h3 {
     align-items: baseline;
     gap: 5%;
 }
-.service img {
-    width: 60%;
+.imgBox {
+    aspect-ratio: 222/180;
     height: 11.25rem;
     margin-bottom: 5rem;
+ }
+.service img {
+    height: 100%;
 }
 .service p {
     padding: 1.5rem 0;
